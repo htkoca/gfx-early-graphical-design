@@ -1,0 +1,550 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- This Site Was Designed By Wayne D. Fields http://illusivedesign.cjb.net -->
+<!-- Please make sure you read all of the read me file that came with this template then
+you may delete this comment -->
+<html>
+<head><script language="JavaScript1.2">
+
+/*
+Add-to-favorites Script
+Created by David Gardner (toolmandav@geocities.com)
+No warranty of any kind comes with this script!
+Permission granted to Dynamic Drive (http://dynamicdrive.com) 
+to post and feature this script on their DHTML archive
+*/
+
+//configure the two variables below to match yoursite's own info
+var bookmarkurl="http://www.freewebs.com/dynamic-scripts"
+var bookmarktitle="Dynamic-Scripts..DHTML/HTML and PROGRAMS all here!"
+
+function addbookmark(){
+if (document.all)
+window.external.AddFavorite(bookmarkurl,bookmarktitle)
+}
+
+</script>
+	<title>.:|-`Dynamic-Scripts - SCRIPTS/PROGRAMS`-|:.</title>
+	
+<meta name="author" content="ViperD2">
+<META NAME="keywords" CONTENT="Dynamic, Scripts, PROGRAMS, dhtml, html, javascript, Script, PROGRAM, d-html, java, java-script, prog, progs, css, cgi, bin, cgi-bin, d-scripts, d scripts, 100, 99, 50, 30, 20, 10, 5, top-100, top-99, find, finding, latest, newest, new">
+<meta name="description" content="Dynamic Html, Javasripts and Programs All Here!"> 
+<meta name="creation date" content="OCT 2002">
+<meta name="revisit_after" content="7 days">
+<meta name="identifier" content="http://www.freewebs.com/dynamic-scripts/">
+<meta name="language" content="english">
+<meta name="robots" content="follow">
+<META HTTP-EQUIV="imagetoolbar" CONTENT="no">
+<style type="text/css">
+<!--
+BODY {
+scrollbar-face-color: #000000; 
+scrollbar-shadow-color: #CBAC57; 
+scrollbar-highlight-color: #CBAC57; 
+scrollbar-3dlight-color: #000000;
+scrollbar-darkshadow-color: #000000; 
+scrollbar-track-color: #000000; 
+scrollbar-arrow-color: #CBAC57;
+overflow: hidden}
+//-->
+    </style>
+
+<SCRIPT>
+
+//Arrow Head title- By Dynamic Drive
+//Based on status bar script by Jason Rex (wonil4@hotmail.com, http://www.syred.net)
+//Visit http://www.dynamicdrive.com for full source code
+
+//change title text to your own
+    var titletext="Dynamic-Scripts - SCRIPTS/PROGRAMS."
+    var thetext=""
+    var started=false
+    var step=0
+    var times=1
+
+    function welcometext()
+    {
+      times--
+      if (times==0)
+      {
+        if (started==false)
+        {
+          started = true;
+          document.title = titletext;
+          setTimeout("anim()",1);
+        }
+        thetext = titletext;
+      }
+    }
+
+    function showstatustext(txt)
+    {
+      thetext = txt;
+      setTimeout("welcometext()",4000)
+      times++
+    }
+
+    function anim()
+    {
+      step++
+      if (step==7) {step=1}
+      if (step==1) {document.title='.:|-`'+thetext+'`-|:.'}
+      if (step==2) {document.title='`.:|-'+thetext+'-|:.`'}
+      if (step==3) {document.title='`-.:|'+thetext+'|:.`-'}
+      if (step==4) {document.title='|-`.:'+thetext+':.`-|'}
+      if (step==5) {document.title=':|-`.'+thetext+'.`-|:'}
+      if (step==6) {document.title='.:|-`'+thetext+'`-|:.'}
+      setTimeout("anim()",200);
+    }
+
+if (document.title)
+window.onload=onload=welcometext
+    </SCRIPT><script language="JavaScript1.2">
+
+//Disable select-text script (IE4+, NS6+)- By Andy Scott
+//Exclusive permission granted to Dynamic Drive to feature script
+//Visit http://www.dynamicdrive.com for this script
+
+function disableselect(e){
+return false
+}
+
+function reEnable(){
+return true
+}
+
+//if IE4+
+document.onselectstart=new Function ("return false")
+
+//if NS6
+if (window.sidebar){
+document.onmousedown=disableselect
+document.onclick=reEnable
+}
+    </script><script type="text/javascript" language="javascript">
+ 
+<!-- 
+
+function on1() 
+{if (!document.images) return; document.a.src = "images/butt_link1_sel.jpg";} 
+function on2() 
+{if (!document.images) return; document.b.src = "images/butt_link2_sel.jpg";}
+function on3() 
+{if (!document.images) return; document.c.src = "images/butt_link3_sel.jpg";}
+function on4() 
+{if (!document.images) return; document.d.src = "images/butt_link4_sel.jpg";}
+function on5() 
+{if (!document.images) return; document.e.src = "images/butt_link5_sel.jpg";}
+function on6() 
+{if (!document.images) return; document.f.src = "images/butt_link6_sel.jpg";}
+
+function off1() 
+{if (!document.images) return; document.a.src = "images/butt_link1.jpg";}
+function off2() 
+{if (!document.images) return; document.b.src = "images/butt_link2.jpg";}
+function off3() 
+{if (!document.images) return; document.c.src = "images/butt_link3.jpg";}
+function off4() 
+{if (!document.images) return; document.d.src = "images/butt_link4.jpg";}
+function off5() 
+{if (!document.images) return; document.e.src = "images/butt_link5.jpg";}
+function off6() 
+{if (!document.images) return; document.f.src = "images/butt_link6.jpg";}
+
+var imgslist = new Array(  
+"images/butt_link1_sel.jpg",
+"images/butt_link2_sel.jpg", 
+"images/butt_link3_sel.jpg", 
+"images/butt_link4_sel.jpg", 
+"images/butt_link5_sel.jpg", 
+"images/butt_link6_sel.jpg"); 
+
+var imgs=new Array(); 
+for (x=0; x<imgslist.length; x++) 
+ if (document.images) 
+  {imgs[x]=new Image(); imgs[x].src = imgslist[x];}  
+
+//--> 
+    </script>
+
+</head>
+
+<body marginwidth="0" marginheight="0" leftmargin="0" topmargin="0" bgcolor="#000000">
+
+<table width="800" border="0" cellpadding="0" cellspacing="0" height="422" style="border-collapse: collapse" bordercolor="#111111" bgcolor="#000000">
+<tr>
+<td height="88" bgcolor="#000000"><img src="images/index_01.jpg" width="175" height="100"></td>
+<td height="88" background="images/index_02.jpg" colspan="4">&nbsp;</td>
+</tr>
+
+<tr>
+<td height="50"><img src="images/index_06.jpg" width="175" height="50"></td>
+<td height="50"><img src="images/index_07.jpg" width="25" height="50"></td>
+<td background="images/bg.jpg"  width="400" height="299" colspan="2" rowspan="13" valign="top">
+<div id="Layer1" 
+style="position:absolute; left:200; top:100; width:508; height:300; z-index:1; overflow: auto">
+<!-- PAGE CONTENT -->
+<blockquote><strong>
+  <font face="arial" size="2" color="#ffffff">
+<script language=JavaScript>
+<!--
+
+//Disable right click script III- By Renigade (renigade@mediaone.net)
+//For full source code, visit http://www.dynamicdrive.com
+
+var message="";
+///////////////////////////////////
+function clickIE() {if (document.all) {(message);return false;}}
+function clickNS(e) {if 
+(document.layers||(document.getElementById&&!document.all)) {
+if (e.which==2||e.which==3) {(message);return false;}}}
+if (document.layers) 
+{document.captureEvents(Event.MOUSEDOWN);document.onmousedown=clickNS;}
+else{document.onmouseup=clickNS;document.oncontextmenu=clickIE;}
+
+document.oncontextmenu=new Function("return false")
+// --> 
+  </script>  
+  </font>
+  <font face="arial" color="#ffffff" style="font-size: 9pt">
+  Dynamic-Scripts - 4T.Com
+  </font>
+  <font face="arial" size="2" color="#ffffff">
+<hr width="100%" size="1" color="#ffffff" noshade>
+  </font>
+  <font face="arial" size="1" color="#ffcc00">
+  <center>Home</center> 
+  </font>
+  <font face="arial" size="2" color="#ffffff"> <hr width="100%" size="1" color="#ffffff" noshade><span style="text-decoration: none"><center><font face="arial" size="1" color="#ffcc00">> <a href="javascript:window.location.reload()"><font face="arial" size="1" color="#ffcc00"><span style="text-decoration: none">Refresh</span></font></a><font face="arial" size="1" color="#ffcc00"><span style="text-decoration: none"> | <a href="javascript:addbookmark()"><font face="arial" size="1" color="#ffcc00"><span style="text-decoration: none">Bookmark this site!</span></font></a><font face="arial" size="1" color="#ffcc00"><span style="text-decoration: none"> |</span></font></span></font></font></span><font face="arial" size="1" color="#ffcc00"><font face="arial" size="1" color="#ffcc00"><font face="arial" size="1" color="#ffcc00"> <!----Set site as homepage script----------
+
+By Ryan Gravener (ryangravener@hotmail.com)
+Permission granted to Dynamicdrive.com 
+to include script in it's archive
+For full source code, installation instructions,
+100's more DHTML scripts, visit http://dynamicdrive.com
+
+------------------------------------------->
+
+  <span style="text-decoration: none">
+
+<a class="chlnk" style="cursor:hand; text-decoration:none" onClick="this.style.behavior='url(#default#homepage)';this.setHomePage('http://www.freewebs.com/dynamic-scripts');"><font face="arial" size="1" color="#ffcc00">Set As homepage</font></a> < </center><font face="arial" size="1" color="#ffcc00"><span style="text-decoration: none"><span style="text-decoration: none"><br><br>
+  </span></span>
+  <u>
+  <font color="#ffcc00" size="1" face="Arial">
+  <font face="arial" size="1" color="#ffcc00">
+  ..:
+Friday Nov 1. 02</font></u><font face="arial" size="1" color="#ffcc00">
+  -</font><u><font face="arial" size="2" color="#FFCC00"><br></font>
+  </u>
+  </font>
+  </font>
+  </font></font></font><font face="arial" size="1">Omigosh! man.. I think I 
+  should put more stuff on this site.. its like soo boring!.. hmm..<br>maybe I 
+  should Edit this site every Friday.. seems like there's a pattern.. lol</font><font face="arial" size="1" color="#ffcc00"><font color="#ffcc00" size="1" face="Arial"><br>  </font><br>
+  <u>
+  ..:
+Friday Oct 27. 02 <font face="arial" size="2" color="#FFCC00"><br></font>
+  </u>
+            </font></span>            
+            <font face="arial" size="1" color="#ffcc00"><font face="arial" size="1" color="#ffcc00"><font face="arial" size="1" color="#ffcc00">            
+            <font face="Arial" color="#FFFFFF" size="1"> 
+            <span style="text-decoration: none">WHoa! I never knew I was so good at HTML/DHTML! it was only 5 days since I opened this site and I already helped 2 ppl make a new site..<br>
+  </span></font>            
+            <font face="Arial" size="1"> 
+            <span style="text-decoration: underline"><center><br>Visit their sites here:..<br>
+  </span></font>            
+            <font face="Arial" color="#FFFFFF" size="1"> 
+            <a href="http://www.freewebs.com/dark-d">
+  <span style="text-decoration: none"><font color="#FFFFFF" size="1">Dark-D</font></span></a><span style="text-decoration: none"><font size="1"><br>
+  </font>
+  </span><font color="#ffcc00" size="1"><a href="www.gmasterx.cjb.net">
+  <span style="text-decoration: none"><font color="#FFFFFF" size="1">GmasterX</center></font></a></font><font size="1"><br>
+  </font><font color="#ffcc00" size="1"><font face="arial" size="2" color="#ffffff"> <br>
+  </font>
+  <u>
+  <font face="arial" size="1" color="#ffcc00">
+  ..:
+Friday Oct 19. 02 </font><font face="arial" size="2" color="#FFCC00"><br></font>
+  </u>
+  <font face="arial" size="1" color="#FFFFFF">
+Hey </font>            
+            <font face="Arial" color="#FFFFFF" size="1">! 
+            THX for comin to my page! </font>            
+            <font face="Arial" color="#FFFFFF" size="1">I 
+            finally got a new layout and Got this HYPE page running again!! Sorri if sum pages 
+  Still doesn't work, we are currently Fixing these problems...</font><font face="arial" size="1" color="#ffffff">.....and lol this is the second time 
+  I have changed the layout!</font><font face="arial" size="2" color="#ffffff"><br> 
+  </font><br>
+  
+  <font face="arial" size="1" color="#ffffff">And we are currently putting up 
+  programs on this site.</font><font face="arial" size="1" color="#FFCC00"><br><br> </font><font face="arial" size="2" color="#ffffff"><br> <hr><HR><center>
+  </font>
+<font face="arial" size="1" color="#ffffff"><p align="center">This Site is Created by <br>
+  </font>
+  <font face="arial" size="2" color="#ffcc00">
+  <a href="http://illdesign.yoll.net" target="_blank" 
+onMouseOver="window.status='Visit Illusive Design for all your web design needs!'; return true;" 
+onMouseOut="window.status=''; return true;"><font face="arial" size="1" color="#ffcc00">Illusive Designs</font></a></font></font></span><font color="#ffcc00" size="1"><font color="#ffcc00" size="1"><font face="arial" size="2" color="#ffcc00"><font face="arial" size="1" color="#ffcc00"><span style="text-decoration: underline"><br>  
+  </span>  
+  </font>
+  <span style="text-decoration: none">
+  <font face="arial" size="1" color="#ffcc00"><u><i><b>
+  Photoshop 7<br><a href="mailto:VIPERD2@HOTMAIL.COM"><font color="#ffcc00">
+  VIPERD2@HOTMAIL.COM</font></a> </b></i></u><br>
+  </font>
+  <font face="arial" size="2" color="#ffffff">
+  <BR>
+  </font>
+  <font face="arial" size="1" color="#ffffff">.:Affiliates:....<br></font>
+  </span><font face="Arial" color="#00698C" size="1">
+  <b>
+  <font color="#FFCC00">| </font>
+  <span style="text-decoration: none">
+            <a href="http://www.Gmasterx.cjb.net/" target="_blank" 
+onMouseOver="window.status='VISIT GMASTER FOR NEOPET/OTHER HACKS AND CHEATS!'; return true;" 
+onMouseOut="window.status=''; return true;" style="text-decoration: none"><font color="#FFCC00">Gmaster</font></a></span><font color="#ffcc00"><span style="text-decoration: none">
+  | 
+  <a href="http://www.freewebs.com/dark-D" target="_blank" 
+onMouseOver="window.status='Visit Dark-D For Guides!!'; return true;" 
+onMouseOut="window.status=''; return true;" style="text-decoration: none"><font color="#FFCC00">Dark-d</font></a></span></font></b><font color="#ffcc00"><span style="text-decoration: none"><font face="arial" size="1" color="#FFCC00"> 
+  |</p>
+  </font>
+  <font face="arial" size="1" color="#ffffff"><p align="center">Thanks for your support!  </font>
+  </span>
+  <font face="arial" size="2" color="#ffffff">
+  <span style="text-decoration: none">
+  <span style="text-decoration: none">
+  <span style="text-decoration: none">
+  <p><center><a href="http://illdesign.yoll.net" target="_blank" 
+onMouseOver="window.status='Visit Illusive Design for all your web design needs!'; return true;" 
+onMouseOut="window.status=''; return true;"><br><strong>
+  <font face="arial" size="2" color="#ffffff">
+<hr width="100%" size="1" color="#ffffff" noshade>
+  </font>
+</strong>
+  <center><script language="JavaScript1.2" type="text/javascript" src="http://pub47.bravenet.com/counter/code.php?id=361562&usernum=3963751195&groupnum=47&cpv=1"> </script>
+<noscript>
+  <a href="http://counter47.bravenet.com/index.php?id=361562&usernum=3963751195&cpv=1" 
+target="_top"><img src="http://counter47.bravenet.com/counter.php?id=361562&usernum=3963751195" 
+alt="Bravenet.com" border="0" /></a></noscript><br><br>
+<div align="center"><p>
+<a href="http://pub47.bravenet.com/chat/show.php?usernum=3963751195&cpv=1">
+<img src="http://images.bravenet.com/brpics/chatnow.gif" border="0" width="100" height="35" /></a>
+<a href="http://www.bravenet.com/">
+<img src="http://images.bravenet.com/brpics/chatbutt.gif" border="0" width="100" height="35" /></a>
+</div><hr width="100%" size="1" color="#ffffff" noshade>
+  </span>
+  </span>
+  </span><font color="#ffcc00" size="1" face="arial">
+  <span style="text-decoration: none">
+  <span style="text-decoration: none">
+  <span style="text-decoration: none">
+  <center>This Site Was CREATED by: Tony Ko (ViperX)</center><hr>
+<!-- Copyright -->
+  <font face="Arial" size="1" color="#ffffff"></center>
+  <font face="Arial" size="1" color="#ffffff"><script language="JavaScript1.2">
+
+/*
+Dynamic countdown Script- © Dynamic Drive (www.dynamicdrive.com)
+For full source code, 100's more DHTML scripts, and TOS,
+visit http://www.dynamicdrive.com
+*/
+
+
+function setcountdown(theyear,themonth,theday){
+yr=theyear;mo=themonth;da=theday
+}
+
+//////////CONFIGURE THE COUNTDOWN SCRIPT HERE//////////////////
+
+//STEP 1: Configure the countdown-to date, in the format year, month, day:
+setcountdown(2002,12,25)
+
+//STEP 2: Change the two text below to reflect the occasion, and message to display on that occasion, respectively
+var occasion="we finish CONSTRUCTING SITE!!"
+var message_on_occasion="PAGE IS FUNCTIONAL!"
+
+//STEP 3: Configure the below 5 variables to set the width, height, background color, and text style of the countdown area
+var countdownwidth='270px'
+var countdownheight='20px'
+var countdownbgcolor=''
+var opentags='<font face="Verdana" color="#cc0000"><small>'
+var closetags='</small></font>'
+
+//////////DO NOT EDIT PASS THIS LINE//////////////////
+
+var montharray=new Array("Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec")
+var crosscount=''
+
+function start_countdown(){
+if (document.layers)
+document.countdownnsmain.visibility="show"
+else if (document.all||document.getElementById)
+crosscount=document.getElementById&&!document.all?document.getElementById("countdownie") : countdownie
+countdown()
+}
+
+if (document.all||document.getElementById)
+document.write('<span id="countdownie" style="width:'+countdownwidth+'; background-color:'+countdownbgcolor+'"></span>')
+
+window.onload=start_countdown
+
+
+function countdown(){
+var today=new Date()
+var todayy=today.getYear()
+if (todayy < 1000)
+todayy+=1900
+var todaym=today.getMonth()
+var todayd=today.getDate()
+var todayh=today.getHours()
+var todaymin=today.getMinutes()
+var todaysec=today.getSeconds()
+var todaystring=montharray[todaym]+" "+todayd+", "+todayy+" "+todayh+":"+todaymin+":"+todaysec
+futurestring=montharray[mo-1]+" "+da+", "+yr
+dd=Date.parse(futurestring)-Date.parse(todaystring)
+dday=Math.floor(dd/(60*60*1000*24)*1)
+dhour=Math.floor((dd%(60*60*1000*24))/(60*60*1000)*1)
+dmin=Math.floor(((dd%(60*60*1000*24))%(60*60*1000))/(60*1000)*1)
+dsec=Math.floor((((dd%(60*60*1000*24))%(60*60*1000))%(60*1000))/1000*1)
+//if on day of occasion
+if(dday<=0&&dhour<=0&&dmin<=0&&dsec<=1&&todayd==da){
+if (document.layers){
+document.countdownnsmain.document.countdownnssub.document.write(opentags+message_on_occasion+closetags)
+document.countdownnsmain.document.countdownnssub.document.close()
+}
+else if (document.all||document.getElementById)
+crosscount.innerHTML=opentags+message_on_occasion+closetags
+return
+}
+//if passed day of occasion
+else if (dday<=-1){
+if (document.layers){
+document.countdownnsmain.document.countdownnssub.document.write(opentags+"Page already changed to Fully functional"+closetags)
+document.countdownnsmain.document.countdownnssub.document.close()
+}
+else if (document.all||document.getElementById)
+crosscount.innerHTML=opentags+"Occasion already passed! "+closetags
+return
+}
+//else, if not yet
+else{
+if (document.layers){
+document.countdownnsmain.document.countdownnssub.document.write(opentags+dday+ " days, "+dhour+" hours, "+dmin+" minutes, and "+dsec+" seconds left until "+occasion+closetags)
+document.countdownnsmain.document.countdownnssub.document.close()
+}
+else if (document.all||document.getElementById)
+crosscount.innerHTML=opentags+dday+ " D, "+dhour+" hrs, "+dmin+" mins, and "+dsec+" Secs left til' "+occasion+closetags
+}
+setTimeout("countdown()",1000)
+}
+  </script><br>Site layout by Illusive 
+  Designs<font color="#ffffff"> <br>Copyright © 2002 DYNAMIC-SCRIPTS. All rights reserved.<br>
+  Best viewed in IE5+ 800x600 32bit colors.<br>
+</font></font><font face="arial" size="2" color="#ffffff">
+<!-- Copyright -->
+<br><br><br><br><br><br><br>
+  </font>
+  </font>
+  </span>
+  </span>
+  </span></font>
+  </font></font>
+  </font>
+  </font></font></font></font></font></font>
+</strong>
+            <font face="arial" size="1" color="#ffcc00"><font face="arial" size="1" color="#ffcc00"><font face="arial" size="1" color="#ffcc00">            
+            <font face="Arial" color="#FFFFFF" size="1"> 
+            <font color="#ffcc00" size="1"><font color="#ffcc00" size="1">
+            <font face="Arial" color="#FFFFFF" size="1"> 
+  <font face="Arial" color="#00698C" size="1">
+  <font color="#ffcc00">
+  <font face="arial" size="2" color="#ffcc00">
+  <span style="text-decoration: none"><span style="text-decoration: none"><span style="text-decoration: none">
+  <font face="arial" size="2" color="#ffffff">
+</blockquote>
+<!-- PAGE CONTENT -->
+</div>
+</td>
+<td height="50"> </td>
+</tr>
+
+<tr>
+<td height="20" background="images/butt_link1.jpg" align="right">
+<p>
+<span style="font-weight: 700; text-decoration:underline">
+<font face="Arial" size="1" color="#000000">Home</font></span></a><span style="font-weight: 700; "><font face="Arial" size="1"> 
+«</font></span></td>
+<td rowspan="11" height="145"><font color="#FFCC00"><img src="images/index_11.jpg" width="25" height="145"></font></td>
+<td rowspan="11" height="145"><img src="images/index_12.jpg" width="200" height="145"></td>
+</tr>
+
+<tr>
+<td height="5" align="right"><font face="Arial" size="1"><img src="images/index_13.jpg" width="175" height="5"></font></td>
+</tr>
+
+<tr>
+<td height="20" background="images/butt_link2.jpg" align="right">
+<font face="Arial" size="1" color=#000000><b>
+
+<font face="Arial" size="1" color=#000000>Guestbook «</font></a></b></td>
+</tr>
+
+<tr>
+<td height="5"><font face="Arial" size="1"><img src="images/index_15.jpg" width="175" height="5"></font></td>
+</tr>
+
+<tr>
+<td height="20" background="images/butt_link3.jpg" align="right"><b>
+<font size="1" face="Arial">Scripts «</font></b></td>
+</tr>
+
+<tr>
+<td height="5" align="right"><font face="Arial" size="1"><img src="images/index_17.jpg" width="175" height="5"></font></td>
+</tr>
+
+<tr>
+<td height="20" background="images/butt_link4.jpg" align="right"><b>
+<font size="1" face="Arial">Programs «</font></b></td>
+</tr>
+
+<tr>
+<td height="5"><font face="Arial" size="1"><img src="images/index_19.jpg" width="175" height="5"></font></td>
+</tr>
+
+<tr>
+<td height="20" background="images/butt_link5.jpg" align="right">
+<font size="1" face="Arial" color="#000000">
+<b>
+<a href="mailto:VIPERD2@HOTMAIL.com?Subject=" style="text-decoration: none">
+<font face="Arial" size="1" color=#000000>Submit/Email </font>
+</a>
+<font size="1" face="Arial">
+«</a></font></b></td>
+</tr>
+
+<tr>
+<td height="5"><font face="Arial" size="1"><img src="images/index_21.jpg" width="175" height="5"></font></td>
+</tr>
+
+<tr>
+<td height="20" background="images/butt_link6.jpg" align="right">
+&nbsp;</td>
+</tr>
+
+<tr>
+<td height="104"><font color="#00FF00"><img src="images/index_23.jpg" width="175" height="105"></font></td>
+<td height="104"><font color="#FFCC00"><img src="images/index_24.jpg" width="25" height="105"></font></td>
+<td height="104"><img src="images/index_25.jpg" width="200" height="105"></td>
+</tr>
+
+<tr>
+<td height="35"><img src="images/index_26.jpg" width="175" height="35"></td>
+<td height="35"><img src="images/index_27.jpg" width="25" height="35"></td>
+<td height="35"><img src="images/index_28.jpg" width="180" height="35"></td>
+<td height="35"><img src="images/butt_illdesign.jpg" width="220" height="35"
+border="0"></a></td>
+<td height="35"><img src="images/index_30.jpg" width="200" height="35"></td>
+</tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,97 @@
+html, body {
+font-size: 7.5pt;
+font-family: verdana;
+border: 0px solid #000000;
+background-color: #FFFFFF;
+color: #6D6D6D;
+margin: 0px;
+padding: 0px;
+}
+a {
+color: #000000;
+font-size: 7.5pt;
+font-family: verdana;
+border: 0px solid #000000;
+text-decoration: none
+}
+a:link {
+color: #000000;
+font-size: 7.5pt;
+font-family: verdana;
+border: 0px solid #000000;
+text-decoration: none
+}
+a:visited {
+color: #000000;
+font-size: 7.5pt;
+font-family: verdana;
+border: 0px solid #000000;
+text-decoration: none;
+}
+a:active {
+color: #6D6D6D;
+font-size: 7.5pt;
+font-family: verdana;
+border: 0px solid #000000;
+text-decoration: none;
+} 
+A:hover {
+color: #6D6D6D;
+font-size: 7.5pt;
+font-family: verdana;
+border: 0px solid #000000;
+text-decoration: none;
+}
+
+#Pagewrap {
+width: 520px;
+height: 282px;
+border: 1px #FFFFFF solid;
+margin-left: auto;
+margin-right: auto;
+margin-top: 32px;
+background-image: url('../images/mainc.png');
+background-repeat: no-repeat;
+background-position: top center;
+}
+#Contentwrap {
+width: 253px;
+margin-left: auto;
+margin-right: auto;
+padding-right: 1px;
+}
+#Banner {
+height: 117px;
+width: 253px;
+margin-left: auto;
+margin-right: auto;
+margin-top: 106px;
+background-image: url('../images/xic.png');
+background-repeat: no-repeat;
+background-position: top center;
+}
+#Navigation {
+padding-top: 5px;
+padding-bottom: 5px;
+border-bottom: 1px solid #000000;
+text-align: right;
+}
+#Content {
+padding-top: 8px;
+padding-bottom: 8px;
+text-align: right;
+}
+.NavA {
+border: 0px solid #000000;
+padding-left: 5px;
+padding-right: 6px;
+}
+.NavB {
+border: 0px solid #000000;
+padding-left: 5px;
+}
+
+.Dark {
+color: #000000;
+font-weight: bold;
+}

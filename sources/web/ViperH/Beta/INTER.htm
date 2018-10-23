@@ -1,0 +1,143 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+	<meta http-equiv="Content-Language" content="en-us">
+	<title>.:ç-`Dynamic-Scripts - SCRIPTS/PROGRAMS`- ç:.</title>
+	<script>
+//Arrow Head title- By Dynamic Drive
+//Based on status bar script by Jason Rex (wonil4@hotmail.com, http://www.syred.net)
+//Visit http://www.dynamicdrive.com for full source code
+
+//change title text to your own
+    var titletext="Dynamic-Scripts - SCRIPTS/PROGRAMS."
+    var thetext=""
+    var started=false
+    var step=0
+    var times=1
+
+    function welcometext()
+    {
+      times--
+      if (times==0)
+      {
+        if (started==false)
+        {
+          started = true;
+          document.title = titletext;
+          setTimeout("anim()",1);
+        }
+        thetext = titletext;
+      }
+    }
+
+    function showstatustext(txt)
+    {
+      thetext = txt;
+      setTimeout("welcometext()",4000)
+      times++
+    }
+
+    function anim()
+    {
+      step++
+      if (step==7) {step=1}
+      if (step==1) {document.title='.:|-`'+thetext+'`-|:.'}
+      if (step==2) {document.title='`.:|-'+thetext+'-|:.`'}
+      if (step==3) {document.title='`-.:|'+thetext+'|:.`-'}
+      if (step==4) {document.title='|-`.:'+thetext+':.`-|'}
+      if (step==5) {document.title=':|-`.'+thetext+'.`-|:'}
+      if (step==6) {document.title='.:|-`'+thetext+'`-|:.'}
+      setTimeout("anim()",200);
+    }
+
+if (document.title)
+window.onload=onload=welcometext
+    </SCRIPT>
+<script language="JavaScript1.2">
+
+//Disable select-text script (IE4+, NS6+)- By Andy Scott
+//Exclusive permission granted to Dynamic Drive to feature script
+//Visit http://www.dynamicdrive.com for this script
+
+function disableselect(e){
+return false
+}
+
+function reEnable(){
+return true
+}
+
+//if IE4+
+document.onselectstart=new Function ("return false")
+
+//if NS6
+if (window.sidebar){
+document.onmousedown=disableselect
+document.onclick=reEnable
+}
+    </script>
+<style type="text/css">
+<!--
+a:link, a:active, a:visited {
+color: #CBAC57; 
+text-decoration: underline}
+
+a:hover {
+color: #B28816; 
+text-decoration: none}
+
+BODY {
+scrollbar-face-color: #000000; 
+scrollbar-shadow-color: #Cc0000; 
+scrollbar-highlight-color: #Cc0000; 
+scrollbar-3dlight-color: #000000;
+scrollbar-darkshadow-color: #000000; 
+scrollbar-track-color: #000000; 
+scrollbar-arrow-color: #Cc0000;
+overflow: hidden}
+//-->
+    </style>
+
+
+</head>
+
+<body bgcolor="#000000" marginwidth="0" marginheight="0" leftmargin="0" topmargin="0">
+<script language=JavaScript>
+<!--
+
+//Disable right click script III- By Renigade (renigade@mediaone.net)
+//For full source code, visit http://www.dynamicdrive.com
+
+var message="";
+///////////////////////////////////
+function clickIE() {if (document.all) {(message);return false;}}
+function clickNS(e) {if 
+(document.layers||(document.getElementById&&!document.all)) {
+if (e.which==2||e.which==3) {(message);return false;}}}
+if (document.layers) 
+{document.captureEvents(Event.MOUSEDOWN);document.onmousedown=clickNS;}
+else{document.onmouseup=clickNS;document.oncontextmenu=clickIE;}
+
+document.oncontextmenu=new Function("return false")
+// --> 
+</script><center>
+<table height="363" width="923">
+<tr>
+<td align="center" height="86" width="911" colspan="3">&nbsp;</td>
+</tr>
+<tr>
+<td align="center" height="1" valign="middle" width="425">
+<img border="0" src="images/barleft.GIF" align="right" width="377" height="20"></td>
+<td align="center" height="1" valign="middle" width="59">
+<font color="#CBAC57" face="Arial" size="1">ENTER</font></td>
+<td align="center" height="1" valign="middle" width="425">
+<img border="0" src="images/barright.GIF" align="left" width="377" height="20"></td>
+</tr>
+<tr>
+<td align="center" height="132" width="911" colspan="3">&nbsp;</td>
+</tr>
+</table>
+</center>
+
+</body>
+</html>

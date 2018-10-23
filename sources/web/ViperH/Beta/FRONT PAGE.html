@@ -1,0 +1,175 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+	<title>.:ç-`Dynamic-Scripts - SCRIPTS/PROGRAMS`- ç:.</title>
+	<script>
+//Arrow Head title- By Dynamic Drive
+//Based on status bar script by Jason Rex (wonil4@hotmail.com, http://www.syred.net)
+//Visit http://www.dynamicdrive.com for full source code
+
+//change title text to your own
+    var titletext="Dynamic-Scripts - SCRIPTS/PROGRAMS."
+    var thetext=""
+    var started=false
+    var step=0
+    var times=1
+
+    function welcometext()
+    {
+      times--
+      if (times==0)
+      {
+        if (started==false)
+        {
+          started = true;
+          document.title = titletext;
+          setTimeout("anim()",1);
+        }
+        thetext = titletext;
+      }
+    }
+
+    function showstatustext(txt)
+    {
+      thetext = txt;
+      setTimeout("welcometext()",4000)
+      times++
+    }
+
+    function anim()
+    {
+      step++
+      if (step==7) {step=1}
+      if (step==1) {document.title='.:|-`'+thetext+'`-|:.'}
+      if (step==2) {document.title='`.:|-'+thetext+'-|:.`'}
+      if (step==3) {document.title='`-.:|'+thetext+'|:.`-'}
+      if (step==4) {document.title='|-`.:'+thetext+':.`-|'}
+      if (step==5) {document.title=':|-`.'+thetext+'.`-|:'}
+      if (step==6) {document.title='.:|-`'+thetext+'`-|:.'}
+      setTimeout("anim()",200);
+    }
+
+if (document.title)
+window.onload=onload=welcometext
+    </SCRIPT>
+<script language="JavaScript1.2">
+
+//Disable select-text script (IE4+, NS6+)- By Andy Scott
+//Exclusive permission granted to Dynamic Drive to feature script
+//Visit http://www.dynamicdrive.com for this script
+
+function disableselect(e){
+return false
+}
+
+function reEnable(){
+return true
+}
+
+//if IE4+
+document.onselectstart=new Function ("return false")
+
+//if NS6
+if (window.sidebar){
+document.onmousedown=disableselect
+document.onclick=reEnable
+}
+    </script>
+<style type="text/css">
+<!--
+a:link, a:active, a:visited {
+color: #CBAC57; 
+text-decoration: underline}
+
+a:hover {
+color: #B28816; 
+text-decoration: none}
+
+BODY {
+scrollbar-face-color: #000000; 
+scrollbar-shadow-color: #Cc0000; 
+scrollbar-highlight-color: #Cc0000; 
+scrollbar-3dlight-color: #000000;
+scrollbar-darkshadow-color: #000000; 
+scrollbar-track-color: #000000; 
+scrollbar-arrow-color: #Cc0000;
+overflow: hidden}
+//-->
+    </style>
+
+<script src="chromeless_35.js"></script>
+<script language="javascript">
+function openIT(u,W,H,X,Y,n,b,x,m,r) {
+	var cU  ='images/close_up.gif'
+	var cO  ='images/close_ovr.gif'
+	var cL  ='images/clock.gif'
+	var mU  ='images/min_up.gif'
+	var mO  ='images/min_ovr.gif'
+	var xU  ='images/max_up.gif'
+	var xO  ='images/max_ovr.gif'
+	var rU  ='images/res_up.gif'
+	var rO  ='images/res_ovr.gif'
+	var tH  ='<font face=verdana size=1>.:ç-`Dynamic-Scripts - SCRIPTS/PROGRAMS`- ç:.</font>'
+	var tW  ='.:ç-`Dynamic-Scripts - SCRIPTS/PROGRAMS`- ç:.'
+	var wB  ='#Cc0000'
+	var wBs ='#cc0000'
+	var wBG ='#cc0000'
+	var wBGs='#cc0000'
+	var wNS ='toolbar=0,location=0,directories=0,status=0,menubar=0,scrollbars=0,resizable=1'
+	var fSO ='scrolling=no'
+	var brd =b||0;
+	var max =x||false;
+	var min =m||false;
+	var res =r||true;
+	var tsz =20;
+	return chromeless(u,n,W,H,X,Y,cU,cO,cL,mU,mO,xU,xO,rU,rO,tH,tW,wB,wBs,wBG,wBGs,wNS,fSO,brd,max,min,res,tsz)
+}
+
+    </script>
+
+</head>
+
+<body bgcolor="#000000" marginwidth="0" marginheight="0" leftmargin="0" topmargin="0">
+<script language=JavaScript>
+<!--
+
+//Disable right click script III- By Renigade (renigade@mediaone.net)
+//For full source code, visit http://www.dynamicdrive.com
+
+var message="";
+///////////////////////////////////
+function clickIE() {if (document.all) {(message);return false;}}
+function clickNS(e) {if 
+(document.layers||(document.getElementById&&!document.all)) {
+if (e.which==2||e.which==3) {(message);return false;}}}
+if (document.layers) 
+{document.captureEvents(Event.MOUSEDOWN);document.onmousedown=clickNS;}
+else{document.onmouseup=clickNS;document.oncontextmenu=clickIE;}
+
+document.oncontextmenu=new Function("return false")
+// --> 
+</script><center>
+<table height="100%" width="100%">
+<tr>
+<td align="center"><br><br>
+
+
+<img src="images/FRONT%20ENTER.GIF" border="0" width="168" height="116"></a>
+
+<br><br><font face="Arial"><font size="1" color="#CBAC57">
+<a href="#" onclick="homepage=openIT('FLASH.html',800,435,null,null,'homepage');"><img border="0" src="ds-inter/CHOOSE%20FLASH.GIF" width="127" height="20"></a><a href="#" onclick="homepage=openIT('NOFLASH.html',800,435,null,null,'homepage');"><img border="0" src="ds-inter/CHOOSE%20NO%20FLASH.GIF" width="117" height="20"></a></font></font><p><font face="Arial"><font size="1" color="#CBAC57">Site Layout by 
+Illusive Designs</font><font size="1"><br>
+<!-- Copyright -->
+</font></font>
+<font size="1" color="#CBAC57" face="Arial">
+<strong>Copyright © 2002 DYNAMIC-SCRIPTS. All rights reserved.<br>
+Best viewed in IE5+ 800x600 32bit colors.</strong></font><font size="1" face="Arial">
+<!-- Copyright -->
+</font>
+</td>
+</tr>
+</table>
+</center>
+
+</body>
+</html>
