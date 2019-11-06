@@ -19,9 +19,11 @@ images:
   - 11.jpg
 ---
 # Personal Project
-Early Graphical Design. Web artwork from a decade ago.
+Early Graphical Design. Web artwork & blog branding. Spanning from 1999 to 2009, it depicts an era of static design, right before the major shift into web 2.0, responsive UI/UX, and professional work.
 
 ## Project Views:
 * Raster and Vector artwork.
 * Flash Sidebar Blog
 * Personal flair / logo artwork.
+* Static Blog Templates
+* Photoshop Sliced Template
